@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
-function Nav(props) {
+function Header(props) {
     const {
         categories = [],
         setCurrentCategory,
@@ -23,14 +23,7 @@ function Nav(props) {
             </h2>
             <nav>
                 <ul className="flex-row">
-                <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-                    <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-                            About Me
-                        </a>
-                    </li>
-                    <li>
-                    <span onClick={() => setContactSelected(true)}>Contact</span>
-                    </li>
+                <li className={`mx-2 ${contactSelected && 'navActive'}`}></li>
                     {categories.map((category) => (
                         <li
                             className={`mx-1 ${currentCategory.name === category.name && !contactSelected && `navActive`
@@ -52,4 +45,4 @@ function Nav(props) {
     );
 }
 
-export default Nav;
+export default Header;
