@@ -2,6 +2,8 @@
 // **You need to import React in every component file. 
 import React, { useState } from 'react';
 import Header from './components/Header';
+import Project from './components/Project';
+import Contact from './components/Contact';
 import './App.css';
 
 function App() {
@@ -12,7 +14,6 @@ function App() {
       description: 'Rutgers University graduate with a degree in Communications. Junior Developer from River Edge, NJ. Now residing in Chicago, Il ',
     },
     { name: 'Portfolio'},
-    { name: 'Contact'},
     { name: 'Resume', description: 'Download Resume' },
   ]);
 
@@ -26,6 +27,15 @@ function App() {
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
       ></Header>
+      <main>
+        {!contactSelected ? (
+          <>
+            <Project currentCategory={currentCategory}></Project>
+          </>
+        ) : (
+          <Contact></Contact>
+        )}
+      </main>
     </div>
   );
 }
