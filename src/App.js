@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import Project from './components/Project';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -33,6 +34,10 @@ function App() {
           <Contact></Contact>
         )}
       </main>
+      <footer>
+        <Footer></Footer>
+      </footer>
+
     </div>
   );
 }

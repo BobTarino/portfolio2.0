@@ -255,32 +255,6 @@ textarea {
   cursor: pointer;
 }
 
-.modalBackdrop {
-	background: rgba(0, 0, 0, .65);
-	bottom: 0;
-	left: 0;
-	overflow: auto;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: 1;
-}
-
-.modalContainer {
-	background: var(--darker);
-	border-radius: 5px;
-	max-width: 100%;
-	margin: 50px auto;
-	padding: 15px;
-	width: 960px;
-}
-
-.modalTitle {
-	font-size: 18px;
-	font-weight: 600;
-	margin-bottom: 25px;
-}
-
 button {
 	background: var(--primary);
 	border: 0;
@@ -339,4 +313,37 @@ a {
 
 #dinnerparty-image:hover {
   opacity: 0.75;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+footer h2 {
+  text-align: center;
+  color: white;
+}
+  
+#contact-info ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 20px auto;
+  color: white;
+}
+
+#contact-info ul li {
+  margin-top: 10px;
+  border:1px solid grey;
+}
+
+li:first-child {
+  margin-top:0;
+}
+#contact-info a {
+  color: greenyellow;
 }
