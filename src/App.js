@@ -9,12 +9,9 @@ import './App.css';
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
   const [categories] = useState([
-    {
-      name: 'About',
-      description: 'Rutgers University graduate with a degree in Communications. Junior Developer from River Edge, NJ. Now residing in Chicago, Il ',
-    },
+    {name: 'About'},
     { name: 'Portfolio'},
-    { name: 'Resume', description: 'Download Resume' },
+    { name: 'Resume'},
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);

@@ -306,3 +306,37 @@ a {
 .navActive {
   color: var(--secondary);
 }
+
+#runbuddy-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#runbuddy-image:hover {
+  opacity: 0.75;
+  
+}
+#entertain-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#entertain-image:hover {
+  opacity: 0.75;
+  
+}
+
+
+#placeholder-image:hover {
+  opacity: 0.75;
+}
+
+#dinnerparty-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#dinnerparty-image:hover {
+  opacity: 0.75;
+}
