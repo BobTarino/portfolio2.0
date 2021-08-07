@@ -3,7 +3,7 @@ import headshotImage from '../../assets/images/bobHeadshot.jpg';
 import runBuddyImage from '../../assets/images/runBuddy.png';
 import entertainMeImage from '../../assets/images/Entertain-Me.png';
 import dinnerPartyImage from '../../assets/images/dinner-party2.png';
-
+import resumeDoc from '../../assets/resume/Tarino_Robert_Resume.pdf';
 
 
 const Project= ({ currentCategory }) => {
@@ -57,7 +57,35 @@ const Project= ({ currentCategory }) => {
 
             case 'Resume':
 
-                return <h2>Resume</h2>;
+                return <section id="resume">
+                <h2>Resume</h2>
+                <p>
+                  Download my <a href= {resumeDoc} target = "_blank" download="resume">resume</a>
+                </p>
+                <br></br>
+                <h3>Front-end Proficiencies</h3>
+                <ul>
+                    <li>HTML</li>    
+                    <li>CSS</li>   
+                    <li>JavaScript</li>   
+                    <li>JQuery</li>   
+                    <li>responsive design</li>   
+                    <li>React</li>   
+                    <li>Bootstrap</li>   
+                </ul>
+                <br></br>
+                <h3>Back-end Proficiencies</h3>
+                <ul>
+                    <li>APIs</li>    
+                    <li>Node</li>   
+                    <li>Express</li>   
+                    <li>MySQL, Sequelize</li>   
+                    <li>MongoDB, Mongoose</li>   
+                    <li>REST</li>   
+                    <li>GraphQL</li>   
+                </ul>
+            </section>;
+                
 
             default:
                 return <section id="main-bio">
