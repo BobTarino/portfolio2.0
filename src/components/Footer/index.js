@@ -3,7 +3,6 @@ import React from 'react';
 function Footer () {
     return (
         <section id="contact-info">
-        <h2>Contact Me</h2>
         <div class="list">
           <ul>
             <li><strong>Email:</strong> <a href="mailto: bob.tarino@gmail.com">bob.tarino@gmail.com</a></li>
