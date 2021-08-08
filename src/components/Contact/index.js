@@ -40,15 +40,18 @@ function ContactForm() {
     return (
         <section>
           <h1 data-testid="h1tag">Contact me</h1>
+          <br></br>
           <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name:</label>
                     <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
                 </div>
+                <br></br>
                 <div>
                     <label htmlFor="email">Email address:</label>
                     <input type="email" defaultValue={email} name="email" onBlur={handleChange} />
                 </div>
+                <br></br>
                 <div>
                     <label htmlFor="message">Message:</label>
                     <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
