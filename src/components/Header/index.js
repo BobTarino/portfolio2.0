@@ -17,7 +17,7 @@ function Header(props) {
     return (
         <header className="flex-row px-1">
             <h2>
-                <a href="/">
+                <a href="https://bobtarino.github.io/portfolio2.0/">
                     Robert Tarino
                 </a>
             </h2>
