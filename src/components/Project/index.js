@@ -3,6 +3,7 @@ import headshotImage from '../../assets/images/bobHeadshot.jpg';
 import runBuddyImage from '../../assets/images/runBuddy.png';
 import entertainMeImage from '../../assets/images/Entertain-Me.png';
 import dinnerPartyImage from '../../assets/images/dinner-party2.png';
+import reduxImage from '../../assets/images/redux2.png';
 import resumeDoc from '../../assets/resume/Tarino_Robert_Resume.pdf';
 
 const Project= ({ currentCategory }) => {
@@ -25,6 +26,15 @@ const Project= ({ currentCategory }) => {
             
                 return     <section id="work-info">
                 <h2>Portfolio</h2>
+                <div className="work">
+                    <a href="https://entertain-me-redux.herokuapp.com/">
+                      <img id="redux-image" src={reduxImage} alt="Entertain Me Version 2.0 Application" />
+                      <figcaption>
+                        Entertain Me! v.2.0
+                      </figcaption>
+                    </a>
+                    <a href="https://github.com/BobTarino/entertain-me-redux">GitHub</a>
+                  </div>
                 <div className="flex-container">
                   <div className="work">
                    <a href="https://bobtarino.github.io/run-buddy/">
