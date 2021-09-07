@@ -15,9 +15,16 @@ const Project= ({ currentCategory }) => {
                 return <section id="main-bio">
                     <h2>About Me</h2>
                     <br></br>
-                    <p>
-                      Robert is a Rutgers University graduate with a degree in Communications. Junior Developer from River Edge, NJ. Now residing in Chicago, Il.
-                    </p>
+                  <p>
+                    Born in River Edge, NJ. Currently residing in Chicgao, IL. 
+
+                    Received:
+                    . BA degree in Communications at Rutgers University with a minor in Cinema
+                    . Certificate in Computer Coding from the University of Utah through Trinity Education Services.
+
+                    Graduate of The Second City Training Center Writing Program.
+                    Studied and performed at IO in Chicago, IL. 
+                  </p>
                     <br></br>
                     <img src={headshotImage} id="headshot-image" style={{ width: "100%" }} alt="Robert Tarino" />
                 </section>
