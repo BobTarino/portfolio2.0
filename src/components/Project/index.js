@@ -4,7 +4,7 @@ import runBuddyImage from '../../assets/images/runBuddy.png';
 import entertainMeImage from '../../assets/images/Entertain-Me.png';
 import dinnerPartyImage from '../../assets/images/dinner-party2.png';
 import reduxImage from '../../assets/images/redux2.png';
-import resumeDoc from '../../assets/resume/Tarino_Robert_2021Resume.pdf';
+import resumeDoc from '../../assets/resume/Tarino_finalresume.docx.pdf';
 
 const Project= ({ currentCategory }) => {
     
