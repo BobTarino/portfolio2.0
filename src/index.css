@@ -295,19 +295,21 @@ a {
   color: var(--secondary);
 }
 
-#runbuddy-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-#runbuddy-image:hover {
-  opacity: 0.75;
-  
-}
+
 #entertain-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding:1px;
+  border:1px solid #021a40;
+}
+#redux-image {
+  padding:1px;
+  border:1px solid #021a40;
+}
+#runbuddy-image {
+  padding:1px;
+  border:1px solid #021a40;
 }
 #entertain-image:hover {
   opacity: 0.75;
@@ -323,6 +325,8 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding:1px;
+  border:1px solid #021a40;
 }
 
 #dinnerparty-image:hover {
@@ -360,3 +364,39 @@ li:first-child {
 #contact-info a {
   color: #94e2d9;
 }
+
+
+#main-bio p {
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+.box {
+  display: flex;
+  vertical-align: middle;
+}
+
+#image {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding:1px;
+  border:1px solid #021a40;
+}
+
+@media screen and (max-width: 575px) {
+  #image {
+    display: block;
+    width: 300px;
+    height: auto;
+  }
+  .box {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #main-bio p {
+    font-size: 15px;
+    padding-left: 0px;
+  }
+ }
