@@ -24,7 +24,7 @@ const Project= ({ currentCategory }) => {
                       <br></br>
                       <div class="column">
                         <p>
-                         Robert, or "Bob" for short, is a passionate, hardworking Full Stack Web/App Developer with a focus in MERN stack (MongoDB, Express, React, & Node). Born in River Edge, NJ. Currently residing in Chicgao, IL. 
+                         Robert, or "Bob" for short, is a passionate, hardworking Full Stack Web/App Developer with a focus in MERN stack (MongoDB, Express, React, & Node). Born in River Edge, NJ. Currently residing in Chicago, IL. 
                           <br></br>
                           <br></br>
                           <div>
