@@ -23,6 +23,7 @@ function ContactForm() {
           )
             .then((response) => {
               console.log('SUCCESS!', response.status, response.text);
+              setErrorMessage('Your message has been sent!');
             })
             .catch((err) => {
               console.log('FAILED...', err);
