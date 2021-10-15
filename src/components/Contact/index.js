@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import { send } from 'emailjs-com';
+import{ init } from 'emailjs-com';
+init("user_mKdUJe7qQhWiVRQUXAltg");
+
 
 function ContactForm() {
     
@@ -7,6 +11,24 @@ function ContactForm() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const { name, email, message } = formState;
     const [errorMessage, setErrorMessage] = useState('');
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        console.log(formState);
+        send(
+            'service_bs4jpna',
+            'template_ye8k1lf',
+            formState,
+            'user_mKdUJe7qQhWiVRQUXAltg'
+          )
+            .then((response) => {
+              console.log('SUCCESS!', response.status, response.text);
+            })
+            .catch((err) => {
+              console.log('FAILED...', err);
+            });
+        
+    }
     // function will sync the internal state of the component formState with the user input from the DOM
     function handleChange(e) {
         // validation
@@ -32,10 +54,6 @@ function ContactForm() {
         // spread operator (...) to retain the other key-value pairs in this object
         setFormState({...formState, [e.target.name]: e.target.value })
     }
-    function handleSubmit(e) {
-        e.preventDefault();
-        console.log(formState);
-    }
       
     return (
         <section>
@@ -44,17 +62,17 @@ function ContactForm() {
           <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name:</label>
-                    <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
+                    <input type="text" defaultValue={name} onBlur={handleChange} name="name" placeholder="name" />
                 </div>
                 <br></br>
                 <div>
                     <label htmlFor="email">Email address:</label>
-                    <input type="email" defaultValue={email} name="email" onBlur={handleChange} />
+                    <input type="email" defaultValue={email} name="email" onBlur={handleChange} placeholder="email" />
                 </div>
                 <br></br>
                 <div>
                     <label htmlFor="message">Message:</label>
-                    <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
+                    <textarea name="message" defaultValue={message} onBlur={handleChange} placeholder="Your message" rows="3" />
                 </div>
                 {errorMessage && (
                     <div>
