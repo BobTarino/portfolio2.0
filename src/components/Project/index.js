@@ -5,6 +5,7 @@ import entertainMeImage from '../../assets/images/Entertain-Me.png';
 import dinnerPartyImage from '../../assets/images/dinner-party2.png';
 import reduxImage from '../../assets/images/redux2.png';
 import resumeDoc from '../../assets/resume/Tarino_finalresume.docx.pdf';
+import {FaGithub} from "react-icons/fa";
 
 const Project= ({ currentCategory }) => {
     
@@ -14,29 +15,37 @@ const Project= ({ currentCategory }) => {
 
                 return <section id="main-bio">
                     <h2>About Me</h2>
-                    <br></br>
-                    <br></br>
+                    <br></br><br></br>
                     <div class="box">
                       <div class="column">
                         <img src={headshotImage} id="image" alt="Robert Tarino" />
                       </div>
-                      <br></br>
-                      <br></br>
+                      <br></br><br></br>
                       <div class="column">
-                        <p>
-                         Robert, or "Bob" for short, is a passionate, hardworking Full Stack Web/App Developer with a focus in MERN stack (MongoDB, Express, React, & Node). Born in River Edge, NJ. Currently residing in Chicago, IL. 
-                          <br></br>
-                          <br></br>
-                          <div>
-                            Received:
-                            <ul>
-                            <li>BA degree in Communications at Rutgers University with a minor in Cinema.</li>
-                            <li>Certificate in Computer Coding from the University of Utah through Trinity Education Services.</li>
-                            </ul>
-                          </div>
-                          Graduate of The Second City Training Center Writing Program.
-                          Studied and performed at IO in Chicago, IL. 
-                        </p>
+                        <div class="card">
+                          <p>
+                            BIO:
+                            <br></br><br></br>
+                            Robert, or "Bob" for short, is a passionate, hardworking Full Stack Web/App Developer with a focus in MERN stack (MongoDB, Express, React, & Node). 
+                            <br></br><br></br>
+                            <div>
+                              Received:
+                              <ul>
+                                <li>BA in Communications at Rutgers University with a minor in Cinema Studies.</li>
+                                <li>Certificate in Full Stack Web Development from the University of Utah through Trinity Education Services.</li>
+                              </ul>
+                              Other:
+                              <br /><br />
+                              Graduate of The Second City Training Center Writing Program in Chicago, IL.
+                              <br /><br />
+                              Certified in CPR/AED, Standard First Aid, and Bloodborne Pathogens (BLS) by the American Health Care Academy.
+                              <br /><br />
+                              Nationally ranked in Muay Thai and Savate Boxe-Française. 
+                              <br /><br />
+                              Born in River Edge, NJ. Currently residing in Chicago, IL.
+                            </div>
+                          </p>
+                        </div>
                       </div>
                    </div>
                     <br></br>
@@ -44,48 +53,65 @@ const Project= ({ currentCategory }) => {
             
             case 'Portfolio':
             
-                return     <section id="work-info">
+                return <section id="work-info">
                 <h2>Portfolio</h2>
-                <br></br>
-                <br></br>
+                <br></br><br></br>
                 <div className="work">
                     <a href="https://entertain-me-redux.herokuapp.com/">
                       <img id="redux-image" src={reduxImage} alt="Entertain Me Version 2.0 Application" />
-                      <figcaption>
-                        Entertain Me! v.2.0
-                      </figcaption>
+                      <div class="overlay">
+                        <div class="cardtext">
+                          Entertain Me! ver2.0
+                          <br /><br />
+                          A SPA that presents info on a specific movie, show, or video game based on certain criteria a user enters. Discover new media, save it, and share playlists with friends and fellow users.
+                          <br /><br />
+                          <a href="https://github.com/BobTarino/entertain-me-redux"><FaGithub size={40} /></a>
+                        </div>
+                      </div>
                     </a>
-                    <a href="https://github.com/BobTarino/entertain-me-redux">GitHub</a>
                   </div>
-                <br></br>
                 <div className="flex-container">
-                  <div className="work">
-                   <a href="https://bobtarino.github.io/run-buddy/">
-                      <img id="runbuddy-image" src={runBuddyImage} alt="Run Buddy Application" />
-                    <figcaption>
-                      Run Buddy 
-                    </figcaption>
-                    <a href="https://github.com/BobTarino/run-buddy">GitHub</a>
-                    </a>
-                  </div>
-                  <br></br>
-                  <div className="work">
-                    <a href="https://bobtarino.github.io/Entertain-Me/">
-                      <img id="entertain-image" src={entertainMeImage} alt="Entertain-Me Application" />
-                      <figcaption>
-                        Entertain-Me
-                      </figcaption>
-                    </a>
-                    <a href="https://github.com/BobTarino/Entertain-Me">GitHub</a>
-                  </div>
-                  <br></br>
                   <div className="work">
                     <a href="https://dinner-parties.herokuapp.com/">
                       <img id="dinnerparty-image" src={dinnerPartyImage} alt="Dinner Party Application" />
-                      <figcaption>
-                        Dinner Party
-                      </figcaption>
-                      <a href="https://github.com/BobTarino/dinner-party">GitHub</a>
+                      <div class="overlay">
+                        <div class="cardtext">
+                            Dinner Party
+                            <br /><br />
+                            An application that arranges parties and get-togethers for friends based on collective interests.
+                            <br /><br />
+                            <a href="https://github.com/BobTarino/dinner-party"><FaGithub size={40} /></a>
+                          </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div className="work">
+                    <a href="https://bobtarino.github.io/Entertain-Me/">
+                      <img id="entertain-image" src={entertainMeImage} alt="Entertain-Me Application" />
+                      <div class="overlay">
+                        <div class="cardtext">
+                            Entertain Me!
+                            <br /><br />
+                            An application that arranges parties and get-togethers for friends based on collective interests.
+                            <br /><br />
+                            <a href="https://github.com/BobTarino/Entertain-Me"><FaGithub size={40} /></a>
+                          </div>
+                      </div>
+                    </a>
+                  </div>
+                  <br></br>
+                  <div className="work">
+                   <a href="https://bobtarino.github.io/run-buddy/">
+                      <img id="runbuddy-image" src={runBuddyImage} alt="Run Buddy Application" />
+                      <div class="overlay">
+                        <div class="cardtext">
+                            RUN BUDDY
+                            <br /><br />
+                            Front End demo for a fitness based application.
+                            <br /><br />
+                            <a href="https://github.com/BobTarino/run-buddy"><FaGithub size={40} /></a>
+                          </div>
+                      </div>
                     </a>
                   </div>
                 </div>
@@ -104,7 +130,7 @@ const Project= ({ currentCategory }) => {
                     <ul>
                         <li>HTML5</li>    
                         <li>CSS3</li>   
-                        <li>JavaScript</li>   
+                        <li>JavaScript ES6+</li>   
                         <li>JQuery</li>   
                         <li>Responsive Design</li>   
                         <li>React</li>   
@@ -132,10 +158,38 @@ const Project= ({ currentCategory }) => {
             default:
                 return <section id="main-bio">
                 <h2>About Me</h2>
-                <img src={headshotImage} style={{ width: "50%" }} alt="Robert Tarino" />
-                <p>
-                  Robert is a Rutgers University graduate with a degree in Communications. Junior Developer from River Edge, NJ. Now residing in Chicago, Il.
-                </p>
+                <br></br><br></br>
+                <div class="box">
+                  <div class="column">
+                    <img src={headshotImage} id="image" alt="Robert Tarino" />
+                  </div>
+                  <br></br><br></br>
+                  <div class="column">
+                    <div class="card">
+                      <p>
+                      Robert, or "Bob" for short, is a passionate, hardworking Full Stack Web/App Developer with a focus in MERN stack (MongoDB, Express, React, & Node). 
+                        <br></br><br></br>
+                        <div>
+                          Received:
+                          <ul>
+                            <li>BA degree in Communications at Rutgers University with a minor in Cinema.</li>
+                            <li>Certificate in Full Stack Web Development from the University of Utah through Trinity Education Services.</li>
+                          </ul>
+                          Other:
+                          <br /><br />
+                          Graduate of The Second City Training Center Writing Program in Chicago, IL.
+                          <br /><br />
+                          Certified in CPR/AED, Standard First Aid, and Bloodborne Pathogens (BLS) by the American Health Care Academy.
+                          <br /><br />
+                          Nationally ranked in Muay Thai and Savate Boxe-Française. 
+                          <br /><br />
+                          Born in River Edge, NJ. Currently residing in Chicago, IL.
+                        </div>
+                      </p>
+                    </div>
+                  </div>
+               </div>
+                <br></br>
             </section>;
         }
     }

@@ -1,11 +1,12 @@
 // center of application - root component 
 // **You need to import React in every component file. 
 import React, { useState } from 'react';
+import './App.css';
 import Header from './components/Header';
 import Project from './components/Project';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import './App.css';
+
 
 
 
@@ -27,7 +28,8 @@ function App() {
         currentCategory={currentCategory}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
-      ></Header>
+      >
+      </Header>
       <main>
         {!contactSelected ? (
           <>

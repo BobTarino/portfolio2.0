@@ -92,6 +92,8 @@ h6 {
 p {
   font-size: 1.1rem;
   margin-top: 0;
+  font-size: 15px;
+  padding: 10px;
 }
 
 a {
@@ -191,13 +193,6 @@ textarea {
 	padding: 5px;
 }
 
-.container {
-  width: 85%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .flex-row {
   display: flex;
   flex-wrap: wrap;
@@ -256,10 +251,6 @@ textarea {
   padding-bottom: var(--spacing-two);
 }
 
-.card {
-  width: 25%;
-  text-align: center;
-}
 
 .img-thumbnail {
   width: auto;
@@ -365,12 +356,6 @@ li:first-child {
   color: #94e2d9;
 }
 
-
-#main-bio p {
-  font-size: 15px;
-  padding-left: 20px;
-}
-
 .box {
   display: flex;
   vertical-align: middle;
@@ -384,6 +369,63 @@ li:first-child {
   border:1px solid #021a40;
 }
 
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+/* hover card portfolio effects */
+.work{
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.work:hover .overlay {
+  opacity: 1;
+}
+
+.cardtext {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+
+
 @media screen and (max-width: 575px) {
   #image {
     display: block;
@@ -395,8 +437,35 @@ li:first-child {
     vertical-align: middle;
   }
 
-  #main-bio p {
+  p {
+    font-size: 1.1rem;
+    margin-top: 0;
     font-size: 15px;
-    padding-left: 0px;
+    padding: 15px;
+  }
+
+  .cardtext {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  textarea {
+    width: 300px;
+    height: 120px;
+    border: 3px solid #cccccc;
+    padding: 5px;
   }
  }
+
+
+ 
+
+ 
