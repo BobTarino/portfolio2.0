@@ -63,7 +63,7 @@ const Project= ({ currentCategory }) => {
                         <div class="cardtext">
                           Entertain Me! ver2.0
                           <br /><br />
-                          A SPA that presents info on a specific movie, show, or video game based on certain criteria a user enters. Discover new media, save it, and share playlists with friends and fellow users.
+                          A SPA that presents info on a specific movie, show, or video game based on certain user criteria. Discover new media, save it, and share playlists.
                           <br /><br />
                           <a href="https://github.com/BobTarino/entertain-me-redux"><FaGithub size={40} /></a>
                         </div>
