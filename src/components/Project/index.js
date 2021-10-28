@@ -56,6 +56,7 @@ const Project= ({ currentCategory }) => {
                 return <section id="work-info">
                 <h2>Portfolio</h2>
                 <br></br><br></br>
+              <div className="flex-container">
                 <div className="work">
                     <a href="https://entertain-me-redux.herokuapp.com/">
                       <img id="redux-image" src={reduxImage} alt="Entertain Me Version 2.0 Application" />
@@ -70,7 +71,6 @@ const Project= ({ currentCategory }) => {
                       </div>
                     </a>
                   </div>
-                <div className="flex-container">
                   <div className="work">
                     <a href="https://dinner-parties.herokuapp.com/">
                       <img id="dinnerparty-image" src={dinnerPartyImage} alt="Dinner Party Application" />
@@ -114,7 +114,7 @@ const Project= ({ currentCategory }) => {
                       </div>
                     </a>
                   </div>
-                </div>
+              </div>
           </section>;
 
             case 'Resume':
