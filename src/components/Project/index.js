@@ -1,5 +1,6 @@
 import React from 'react';
 import headshotImage from '../../assets/images/bob-headshot-com.jpg';
+import codeCert from '../../assets/images/codeCert.png';
 import runBuddyImage from '../../assets/images/runBuddy.png';
 import entertainMeImage from '../../assets/images/Entertain-Me.png';
 import dinnerPartyImage from '../../assets/images/dinner-party2.png';
@@ -125,33 +126,41 @@ const Project= ({ currentCategory }) => {
                   Download my <a href= {resumeDoc} download="resume">resume</a>
                 </p>
                 <br></br>
-                <h3>Front-end Proficiencies</h3>
-                <div>
-                    <ul>
-                        <li>HTML5</li>    
-                        <li>CSS3</li>   
-                        <li>JavaScript ES6+</li>   
-                        <li>JQuery</li>   
-                        <li>Responsive Design</li>   
-                        <li>React</li>   
-                        <li>Bootstrap</li>
-                        <li>Handlebars</li> 
-                        <li>Sass</li>     
-                    </ul>
+                <div class = "box">
+                <div class="column">
+                  <img src={codeCert} alt="Robert Tarino" />
                 </div>
                 <br></br>
-                <h3>Back-end Proficiencies</h3>
-                <div>
-                    <ul> 
-                        <li>Node</li>   
-                        <li>Express</li>   
-                        <li>MySQL/Sequelize</li>   
-                        <li>MongoDB/Mongoose</li>   
-                        <li>REST</li>   
-                        <li>GraphQL/Apollo</li> 
-                        <li>APIs</li>     
-                    </ul>
+                < div class="column">
+                  <h3>Front-end Proficiencies</h3>
+                  <div>
+                      <ul>
+                          <li>HTML5</li>    
+                          <li>CSS3</li>   
+                          <li>JavaScript ES6+</li>   
+                          <li>JQuery</li>   
+                          <li>Responsive Design</li>   
+                          <li>React</li>   
+                          <li>Bootstrap</li>
+                          <li>Handlebars</li> 
+                          <li>Sass</li>     
+                      </ul>
+                  </div>
+                  <br></br>
+                  <h3>Back-end Proficiencies</h3>
+                  <div>
+                      <ul> 
+                          <li>Node</li>   
+                          <li>Express</li>   
+                          <li>MySQL/Sequelize</li>   
+                          <li>MongoDB/Mongoose</li>   
+                          <li>REST</li>   
+                          <li>GraphQL/Apollo</li> 
+                          <li>APIs</li>     
+                      </ul>
+                  </div>
                 </div>
+              </div>
             </section>;
                 
 
