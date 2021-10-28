@@ -421,6 +421,7 @@ li:first-child {
   text-align: center;
 }
 
+
 @media screen and (max-width: 575px) {
   #image {
     display: block;

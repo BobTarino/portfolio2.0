@@ -1,5 +1,5 @@
 import React from 'react';
-import headshotImage from '../../assets/images/bobHeadshot.jpg';
+import headshotImage from '../../assets/images/bob-headshot-com.jpg';
 import runBuddyImage from '../../assets/images/runBuddy.png';
 import entertainMeImage from '../../assets/images/Entertain-Me.png';
 import dinnerPartyImage from '../../assets/images/dinner-party2.png';
