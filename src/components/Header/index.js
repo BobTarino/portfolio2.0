@@ -10,9 +10,13 @@ function Header(props) {
         setContactSelected
     } = props;
     
-    useEffect(() => {
-        document.title = capitalizeFirstLetter(currentCategory.name);
-      }, [currentCategory]);
+    useEffect(() => { 
+        !contactSelected ? (
+            document.title = capitalizeFirstLetter(currentCategory.name)
+        ) : (
+            document.title = 'Contact'
+        )
+    });
 
     return (
         <header className="flex-row px-1">
