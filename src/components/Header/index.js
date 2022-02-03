@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from "../../utils/helpers";
+import Zoom from '../../components/animations';
 
 function Header(props) {
     const {
@@ -20,12 +21,8 @@ function Header(props) {
 
     return (
         <header className="flex-row px-1">
-            <h2>
-                <a href="https://bobtarino.github.io/portfolio2.0/">
-                    Robert Tarino
-                </a>
-            </h2>
             <nav>
+            <Zoom></Zoom>
                 <ul className="flex-row">
                 <li className={`mx-2 ${contactSelected && 'navActive'}`}></li>
                 
