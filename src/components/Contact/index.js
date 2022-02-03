@@ -16,10 +16,10 @@ function ContactForm() {
         e.preventDefault();
         console.log(formState);
         send(
-            'service_bs4jpna',
-            'template_ye8k1lf',
+            process.env.REACT_APP_SERVICE_ID,
+            process.env.REACT_APP_TEMPLATE_ID,
             formState,
-            'user_mKdUJe7qQhWiVRQUXAltg'
+            process.env.REACT_APP_USER_ID
           )
             .then((response) => {
               console.log('SUCCESS!', response.status, response.text);
